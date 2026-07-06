@@ -23,19 +23,46 @@ a = 10
 ```
 
 
->[!INFO] Pythondaki veri yapilari su sekilde java ya benzetilebilir
+> Pythondaki veri yapilari su sekilde java ya benzetilebilir
 > Dictionary = Hashmap
 >  Set = HashSet
 >  List = ArrayList
 >  Tuple = Immutable List
 >  String = Char Array
 
->[!INFO] Listelerde slicing mantigi
+> Listelerde slicing mantigi
 > [Start Index : Last Index : Hopping Value]
 > seklinde listenin istenen bolumu alinabilir
 
+---
+# Python da Class yapilari
+
+> Pythonda sinif yapilari class anahtar kelimesi ile olusturulur
+> kurucu fonksiyonu __init__(self) fonkisoyu ile olustulur
+> ek kurucular tanimlanmak istenirse @classmethod anatasyonu ile tanimlanabilir
+> Siniflardaki private fonksiyonlar tanimlanirken basina __ eklemesi yapilabilir
+
+```Python
+    class MyNewClass
+    
+    def __init__(self, name, age, no):
+        # Buradaki self this anahtar kelimesi gibidir sinifin kendini gosteren pointerdir
+        # Bu sinif altina yazilan fieldlar ayni zamanda class in propertyleri olur
+        self.name = name
+        self.age = age
+        self.no = no
+
+    def __isNoValid(self):
+        if no % 2 == 0:
+            return True;
+        return False
 
 
+```
+
+
+---
+# Modules
 
 ```Python
 
@@ -46,7 +73,10 @@ from module import function # module icindeki sadece istenen fonksiyonu ve fonks
 ```
 
 
+> modullerde __init__.py dosyasi olmasi gerekir python yorumlayicisi bu sekilde bu dosyanin bir package oldugunu anlar
+> gereken sub modullerde de bu init dosyasinin bulunmasi gerekir. Sub modulleri dahil etme syntaxi asagisaki gibidir
 
-
-
+```Python
+    import modul.submodule
+```
 
