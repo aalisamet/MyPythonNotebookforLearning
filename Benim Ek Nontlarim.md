@@ -92,3 +92,31 @@ from module import function # module icindeki sadece istenen fonksiyonu ve fonks
     import modul.submodule
 ```
 
+---
+
+# Isimlendirme kurallari ve kendi temiz kod prensiplerim
+
+> Isimlendirirken degisken isminden sonra : koyarak tip verilmesi bu degiskenin hangi turde bir veri sakladigi bilgisni verecektir ayni zamanda
+> verilen isimlerin degiskenlerin tuttuklarini yeterince iyi betimlemesi yerinde olacaktir ornek bir kod standarti icin asagidaki kullanim ideal olacaktir
+
+```Python
+
+    name : str
+    age : int
+    birthDate : Instant
+    salary : double
+    
+     
+    
+    #isimlendirmede bu kurallara uyulmasi kararlastirilmistir
+    # Bunun yaninda isimlendirirken camel ya da pascal casing yerine snake case yazim yaygin oldugu gorulmustur python isimlendirmelerinde bunu kullan
+    # Snake case e gore yeniden yazim asagida verilmistir
+    
+    name : str
+    age: int
+    birth_date :Instant
+    salary : double
+    
+    personel_list : list
+    
+```
