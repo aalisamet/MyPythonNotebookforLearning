@@ -37,7 +37,13 @@ a = 10
 
 
 
+```Python
 
+import module # Tum modulu getirir
+
+from module import function # module icindeki sadece istenen fonksiyonu ve fonksiyonun bagimliliklarini projye dahil eder 
+
+```
 
 
 
